@@ -22,6 +22,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		632EE1671E50B43F00710EDF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		632EE0F21E50886F00710EDF /* AppOneApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppOneApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		632EE0F51E50886F00710EDF /* AppOneApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppOneApp.h; sourceTree = "<group>"; };
@@ -53,6 +65,7 @@
 		632EE0E81E50886F00710EDF = {
 			isa = PBXGroup;
 			children = (
+				632EE16B1E50B57300710EDF /* Frameworks */,
 				632EE0F41E50886F00710EDF /* AppOneApp */,
 				632EE0FF1E50886F00710EDF /* AppOneAppTests */,
 				632EE0F31E50886F00710EDF /* Products */,
@@ -86,6 +99,13 @@
 			path = AppOneAppTests;
 			sourceTree = "<group>";
 		};
+		632EE16B1E50B57300710EDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -108,6 +128,8 @@
 				632EE0EE1E50886F00710EDF /* Frameworks */,
 				632EE0EF1E50886F00710EDF /* Headers */,
 				632EE0F01E50886F00710EDF /* Resources */,
+				632EE1671E50B43F00710EDF /* CopyFiles */,
+				632EE16A1E50B4DE00710EDF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -190,6 +212,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		632EE16A1E50B4DE00710EDF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		632EE0ED1E50886F00710EDF /* Sources */ = {
@@ -394,6 +432,7 @@
 				632EE1081E50886F00710EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		632EE1091E50886F00710EDF /* Build configuration list for PBXNativeTarget "AppOneAppTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +441,7 @@
 				632EE10B1E50886F00710EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
