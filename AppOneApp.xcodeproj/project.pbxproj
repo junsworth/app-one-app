@@ -12,6 +12,7 @@
 		632EE1031E50886F00710EDF /* AppOneApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 632EE0F51E50886F00710EDF /* AppOneApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		632EE1731E50D8A800710EDF /* AppOneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632EE1721E50D8A800710EDF /* AppOneLib.framework */; };
 		632EE1751E50D8B600710EDF /* AppOneLib.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 632EE1741E50D8B600710EDF /* AppOneLib.framework.dSYM */; };
+		632EE19B1E50FF9B00710EDF /* AlamofireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE19A1E50FF9B00710EDF /* AlamofireController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		632EE1021E50886F00710EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632EE1721E50D8A800710EDF /* AppOneLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppOneLib.framework; path = Carthage/Build/iOS/AppOneLib.framework; sourceTree = "<group>"; };
 		632EE1741E50D8B600710EDF /* AppOneLib.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AppOneLib.framework.dSYM; path = Carthage/Build/iOS/AppOneLib.framework.dSYM; sourceTree = "<group>"; };
+		632EE19A1E50FF9B00710EDF /* AlamofireController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		632EE0F41E50886F00710EDF /* AppOneApp */ = {
 			isa = PBXGroup;
 			children = (
+				632EE18C1E50F08B00710EDF /* src */,
 				632EE0F51E50886F00710EDF /* AppOneApp.h */,
 				632EE0F61E50886F00710EDF /* Info.plist */,
 			);
@@ -112,6 +115,22 @@
 				632EE1721E50D8A800710EDF /* AppOneLib.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		632EE18C1E50F08B00710EDF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				632EE18D1E50F08B00710EDF /* Controllers */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		632EE18D1E50F08B00710EDF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				632EE19A1E50FF9B00710EDF /* AlamofireController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +197,7 @@
 				TargetAttributes = {
 					632EE0F11E50886F00710EDF = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					632EE0FA1E50886F00710EDF = {
@@ -243,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632EE19B1E50FF9B00710EDF /* AlamofireController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +388,7 @@
 		632EE1071E50886F00710EDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -383,6 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bubbleworks.AppOneApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -390,6 +413,7 @@
 		632EE1081E50886F00710EDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -413,6 +437,7 @@
 		632EE10A1E50886F00710EDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = AppOneAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bubbleworks.AppOneAppTests;
@@ -424,6 +449,7 @@
 		632EE10B1E50886F00710EDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = AppOneAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bubbleworks.AppOneAppTests;
