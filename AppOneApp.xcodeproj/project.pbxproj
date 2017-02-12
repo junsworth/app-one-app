@@ -10,6 +10,8 @@
 		632EE0FC1E50886F00710EDF /* AppOneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632EE0F21E50886F00710EDF /* AppOneApp.framework */; };
 		632EE1011E50886F00710EDF /* AppOneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE1001E50886F00710EDF /* AppOneAppTests.swift */; };
 		632EE1031E50886F00710EDF /* AppOneApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 632EE0F51E50886F00710EDF /* AppOneApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		632EE1731E50D8A800710EDF /* AppOneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632EE1721E50D8A800710EDF /* AppOneLib.framework */; };
+		632EE1751E50D8B600710EDF /* AppOneLib.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 632EE1741E50D8B600710EDF /* AppOneLib.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				632EE1751E50D8B600710EDF /* AppOneLib.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +44,8 @@
 		632EE0FB1E50886F00710EDF /* AppOneAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppOneAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		632EE1001E50886F00710EDF /* AppOneAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOneAppTests.swift; sourceTree = "<group>"; };
 		632EE1021E50886F00710EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632EE1721E50D8A800710EDF /* AppOneLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppOneLib.framework; path = Carthage/Build/iOS/AppOneLib.framework; sourceTree = "<group>"; };
+		632EE1741E50D8B600710EDF /* AppOneLib.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AppOneLib.framework.dSYM; path = Carthage/Build/iOS/AppOneLib.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632EE1731E50D8A800710EDF /* AppOneLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +71,7 @@
 		632EE0E81E50886F00710EDF = {
 			isa = PBXGroup;
 			children = (
+				632EE1741E50D8B600710EDF /* AppOneLib.framework.dSYM */,
 				632EE16B1E50B57300710EDF /* Frameworks */,
 				632EE0F41E50886F00710EDF /* AppOneApp */,
 				632EE0FF1E50886F00710EDF /* AppOneAppTests */,
@@ -102,6 +109,7 @@
 		632EE16B1E50B57300710EDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				632EE1721E50D8A800710EDF /* AppOneLib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -364,6 +372,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AppOneApp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -383,6 +395,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AppOneApp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
