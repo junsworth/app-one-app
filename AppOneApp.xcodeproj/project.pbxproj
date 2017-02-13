@@ -249,6 +249,8 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CoreLib.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AppOneLib.framework",
 			);
 			outputPaths = (
 			);
