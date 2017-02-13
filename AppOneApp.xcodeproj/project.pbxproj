@@ -10,9 +10,9 @@
 		632EE0FC1E50886F00710EDF /* AppOneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632EE0F21E50886F00710EDF /* AppOneApp.framework */; };
 		632EE1011E50886F00710EDF /* AppOneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE1001E50886F00710EDF /* AppOneAppTests.swift */; };
 		632EE1031E50886F00710EDF /* AppOneApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 632EE0F51E50886F00710EDF /* AppOneApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		632EE1731E50D8A800710EDF /* AppOneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632EE1721E50D8A800710EDF /* AppOneLib.framework */; };
-		632EE1751E50D8B600710EDF /* AppOneLib.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 632EE1741E50D8B600710EDF /* AppOneLib.framework.dSYM */; };
 		632EE19B1E50FF9B00710EDF /* AlamofireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE19A1E50FF9B00710EDF /* AlamofireController.swift */; };
+		639FA1A01E5249BE00BA1DC9 /* AppOneApp.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 639FA19F1E5249BE00BA1DC9 /* AppOneApp.framework.dSYM */; };
+		639FA1A41E5249D400BA1DC9 /* AppOneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639FA1A31E5249D400BA1DC9 /* AppOneLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +32,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				632EE1751E50D8B600710EDF /* AppOneLib.framework.dSYM in CopyFiles */,
+				639FA1A01E5249BE00BA1DC9 /* AppOneApp.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,9 +45,9 @@
 		632EE0FB1E50886F00710EDF /* AppOneAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppOneAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		632EE1001E50886F00710EDF /* AppOneAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOneAppTests.swift; sourceTree = "<group>"; };
 		632EE1021E50886F00710EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		632EE1721E50D8A800710EDF /* AppOneLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppOneLib.framework; path = Carthage/Build/iOS/AppOneLib.framework; sourceTree = "<group>"; };
-		632EE1741E50D8B600710EDF /* AppOneLib.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AppOneLib.framework.dSYM; path = Carthage/Build/iOS/AppOneLib.framework.dSYM; sourceTree = "<group>"; };
 		632EE19A1E50FF9B00710EDF /* AlamofireController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireController.swift; sourceTree = "<group>"; };
+		639FA19F1E5249BE00BA1DC9 /* AppOneApp.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AppOneApp.framework.dSYM; path = "../parent-app/Carthage/Build/iOS/AppOneApp.framework.dSYM"; sourceTree = "<group>"; };
+		639FA1A31E5249D400BA1DC9 /* AppOneLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppOneLib.framework; path = "../parent-app/Carthage/Build/iOS/AppOneLib.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632EE1731E50D8A800710EDF /* AppOneLib.framework in Frameworks */,
+				639FA1A41E5249D400BA1DC9 /* AppOneLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,7 @@
 		632EE0E81E50886F00710EDF = {
 			isa = PBXGroup;
 			children = (
-				632EE1741E50D8B600710EDF /* AppOneLib.framework.dSYM */,
+				639FA19F1E5249BE00BA1DC9 /* AppOneApp.framework.dSYM */,
 				632EE16B1E50B57300710EDF /* Frameworks */,
 				632EE0F41E50886F00710EDF /* AppOneApp */,
 				632EE0FF1E50886F00710EDF /* AppOneAppTests */,
@@ -112,7 +112,7 @@
 		632EE16B1E50B57300710EDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				632EE1721E50D8A800710EDF /* AppOneLib.framework */,
+				639FA1A31E5249D400BA1DC9 /* AppOneLib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
