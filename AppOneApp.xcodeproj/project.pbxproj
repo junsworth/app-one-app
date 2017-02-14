@@ -12,7 +12,7 @@
 		632EE1031E50886F00710EDF /* AppOneApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 632EE0F51E50886F00710EDF /* AppOneApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		632EE19B1E50FF9B00710EDF /* AlamofireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE19A1E50FF9B00710EDF /* AlamofireController.swift */; };
 		639FA1A41E5249D400BA1DC9 /* AppOneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639FA1A31E5249D400BA1DC9 /* AppOneLib.framework */; };
-		639FA1B61E5254B900BA1DC9 /* AppOneLib.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 639FA1B51E5254B900BA1DC9 /* AppOneLib.framework.dSYM */; };
+		639FA1BE1E531FBE00BA1DC9 /* AppOneLib.framework.dSYM in Copy Files dSYM Debug Symbols */ = {isa = PBXBuildFile; fileRef = 639FA1BD1E531FBE00BA1DC9 /* AppOneLib.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,14 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		632EE1671E50B43F00710EDF /* CopyFiles */ = {
+		632EE1671E50B43F00710EDF /* Copy Files dSYM Debug Symbols */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				639FA1B61E5254B900BA1DC9 /* AppOneLib.framework.dSYM in CopyFiles */,
+				639FA1BE1E531FBE00BA1DC9 /* AppOneLib.framework.dSYM in Copy Files dSYM Debug Symbols */,
 			);
+			name = "Copy Files dSYM Debug Symbols";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -47,7 +48,7 @@
 		632EE1021E50886F00710EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632EE19A1E50FF9B00710EDF /* AlamofireController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireController.swift; sourceTree = "<group>"; };
 		639FA1A31E5249D400BA1DC9 /* AppOneLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppOneLib.framework; path = "../parent-app/Carthage/Build/iOS/AppOneLib.framework"; sourceTree = "<group>"; };
-		639FA1B51E5254B900BA1DC9 /* AppOneLib.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AppOneLib.framework.dSYM; path = "../parent-app/Carthage/Build/iOS/AppOneLib.framework.dSYM"; sourceTree = "<group>"; };
+		639FA1BD1E531FBE00BA1DC9 /* AppOneLib.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AppOneLib.framework.dSYM; path = Carthage/Build/iOS/AppOneLib.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +74,7 @@
 		632EE0E81E50886F00710EDF = {
 			isa = PBXGroup;
 			children = (
-				639FA1B51E5254B900BA1DC9 /* AppOneLib.framework.dSYM */,
+				639FA1BD1E531FBE00BA1DC9 /* AppOneLib.framework.dSYM */,
 				632EE16B1E50B57300710EDF /* Frameworks */,
 				632EE0F41E50886F00710EDF /* AppOneApp */,
 				632EE0FF1E50886F00710EDF /* AppOneAppTests */,
@@ -155,7 +156,7 @@
 				632EE0EE1E50886F00710EDF /* Frameworks */,
 				632EE0EF1E50886F00710EDF /* Headers */,
 				632EE0F01E50886F00710EDF /* Resources */,
-				632EE1671E50B43F00710EDF /* CopyFiles */,
+				632EE1671E50B43F00710EDF /* Copy Files dSYM Debug Symbols */,
 				632EE16A1E50B4DE00710EDF /* ShellScript */,
 			);
 			buildRules = (
