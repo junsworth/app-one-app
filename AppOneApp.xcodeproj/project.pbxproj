@@ -13,6 +13,7 @@
 		632EE19B1E50FF9B00710EDF /* AlamofireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632EE19A1E50FF9B00710EDF /* AlamofireController.swift */; };
 		639FA1A41E5249D400BA1DC9 /* AppOneLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639FA1A31E5249D400BA1DC9 /* AppOneLib.framework */; };
 		639FA1BE1E531FBE00BA1DC9 /* AppOneLib.framework.dSYM in Copy Files dSYM Debug Symbols */ = {isa = PBXBuildFile; fileRef = 639FA1BD1E531FBE00BA1DC9 /* AppOneLib.framework.dSYM */; };
+		63D5DD011E5EB85C00EFA823 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63D5DD001E5EB85C00EFA823 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		632EE19A1E50FF9B00710EDF /* AlamofireController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireController.swift; sourceTree = "<group>"; };
 		639FA1A31E5249D400BA1DC9 /* AppOneLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppOneLib.framework; path = "../parent-app/Carthage/Build/iOS/AppOneLib.framework"; sourceTree = "<group>"; };
 		639FA1BD1E531FBE00BA1DC9 /* AppOneLib.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AppOneLib.framework.dSYM; path = Carthage/Build/iOS/AppOneLib.framework.dSYM; sourceTree = "<group>"; };
+		63D5DD001E5EB85C00EFA823 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		632EE18C1E50F08B00710EDF /* src */ = {
 			isa = PBXGroup;
 			children = (
+				63D5DCF51E5EB6F900EFA823 /* Config */,
 				632EE18D1E50F08B00710EDF /* Controllers */,
 			);
 			path = src;
@@ -132,6 +135,14 @@
 				632EE19A1E50FF9B00710EDF /* AlamofireController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		63D5DCF51E5EB6F900EFA823 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				63D5DD001E5EB85C00EFA823 /* Localizable.strings */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D5DD011E5EB85C00EFA823 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +414,7 @@
 				);
 				INFOPLIST_FILE = AppOneApp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bubbleworks.AppOneApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +440,7 @@
 				);
 				INFOPLIST_FILE = AppOneApp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bubbleworks.AppOneApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
